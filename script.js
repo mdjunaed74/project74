@@ -136,3 +136,18 @@ logo.addEventListener("click", function () {
     }
 
 });
+
+function submitRating(){
+
+    const rating = document.querySelector('input[name="rate"]:checked');
+
+    const result = document.getElementById("ratingResult");
+
+    if(!rating){
+        result.innerHTML = "⚠ Please select a rating first!";
+        return;
+    }
+
+    result.innerHTML = "❤️ Thanks for rating Project 74!";
+
+}
