@@ -370,3 +370,21 @@ nav ul{
     opacity:1;
     visibility:visible;
 }
+
+#rating label{
+    display:block;
+    margin:8px 0;
+    cursor:pointer;
+    font-size:18px;
+}
+
+#rating button{
+    margin-top:15px;
+}
+
+#ratingResult{
+    margin-top:20px;
+    color:gold;
+    font-weight:bold;
+    font-size:18px;
+}
