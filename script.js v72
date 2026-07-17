@@ -1,0 +1,138 @@
+// ==========================
+// Project 74 Script
+// ==========================
+
+// Typing Animation
+const text = "It's Me J";
+let index = 0;
+
+function typingEffect() {
+    const title = document.querySelector(".hero h1");
+
+    if (!title) return;
+
+    title.textContent = "";
+
+    function type() {
+        if (index < text.length) {
+            title.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 120);
+        }
+    }
+
+    type();
+}
+
+typingEffect();
+
+
+// Live Clock & Date
+function updateClock() {
+
+    const clock = document.getElementById("clock");
+    const date = document.getElementById("date");
+
+    if (!clock || !date) return;
+
+    const now = new Date();
+
+    clock.textContent = now.toLocaleTimeString("en-GB");
+    date.textContent = now.toDateString();
+}
+
+updateClock();
+setInterval(updateClock, 1000);
+
+
+// Back To Top Button
+const topBtn = document.getElementById("topBtn");
+
+if (topBtn) {
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 250) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+
+    });
+
+    topBtn.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+}
+
+
+// Loader
+window.addEventListener("load", function () {
+
+    const loader = document.getElementById("loader");
+
+    if (!loader) return;
+
+    setTimeout(function () {
+
+        loader.style.opacity = "0";
+
+        setTimeout(function () {
+            loader.style.display = "none";
+        }, 800);
+
+    }, 2000);
+
+});
+
+// Visitor Counter (Local)
+
+let count = localStorage.getItem("visitorCount");
+
+if (count === null) {
+    count = 1;
+} else {
+    count = Number(count) + 1;
+}
+
+localStorage.setItem("visitorCount", count);
+
+const visitor = document.getElementById("visitorCount");
+
+if (visitor) {
+    visitor.textContent = count;
+}
+
+console.log("Visitor script running");
+const logo = document.getElementById("secretLogo");
+const secret = document.getElementById("secretMessage");
+
+let taps = 0;
+
+logo.addEventListener("click", function () {
+
+    taps++;
+
+    console.log("Tap:", taps);
+
+    if (taps === 7) {
+
+        secret.style.opacity = "1";
+        secret.style.visibility = "visible";
+
+        setTimeout(function () {
+
+            secret.style.opacity = "0";
+            secret.style.visibility = "hidden";
+
+        }, 3000);
+
+        taps = 0;
+    }
+
+});

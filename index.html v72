@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>It's Me J | Project 74</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Loader -->
+<div id="loader">
+    <h1>It's Me J</h1>
+    <p>Project 74</p>
+
+    <div class="loading-bar">
+        <div class="loading-fill"></div>
+    </div>
+
+    <span>Loading...</span>
+</div>
+
+<!-- Animated Stars -->
+<div id="stars"></div>
+
+<!-- Navigation -->
+<nav>
+
+<div class="logo">J⁷⁴</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#cr7">CR7</a></li>
+<li><a href="#hobbies">Hobbies</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+<h1></h1>
+
+<p>Dream • Code • Football • Never Give Up</p>
+
+<a href="#about">
+<button>Explore ↓</button>
+</a>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<h3>It's Me J</h3>
+
+<p>🎂 Born : 03 August 2009</p>
+
+<p>📍 Bangladesh</p>
+
+<p>⚽ Favourite Player : Cristiano Ronaldo</p>
+
+<p>❤️ Hobby : Football • Coding • Learning</p>
+
+</div>
+
+</section>
+
+<!-- CR7 -->
+
+<section id="cr7">
+
+<h2>My GOAT 🐐</h2>
+
+<div class="card">
+
+<h3>Cristiano Ronaldo</h3>
+
+<p>Hard Work • Discipline • Never Give Up.</p>
+
+</div>
+
+</section>
+
+<!-- Hobbies -->
+
+<section id="hobbies">
+
+<h2>My Hobbies</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>⚽ Football</h3>
+<p>Playing & Watching Football.</p>
+</div>
+
+<div class="card">
+<h3>💻 Coding</h3>
+<p>Creating Beautiful Websites.</p>
+</div>
+
+<div class="card">
+<h3>📚 Learning</h3>
+<p>Learning Something New Everyday.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Clock -->
+
+<section>
+
+<div class="time-box">
+
+<h2>Current Time</h2>
+
+<h1 id="clock">00:00:00</h1>
+
+<p id="date">Loading...</p>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="card">
+
+        <p>📧 Email</p>
+        <p>mdjunaedeidtor50@gmail.com</p>
+
+        <div class="social">
+
+            <a href="https://www.facebook.com/its.me.j.16.07" target="_blank">
+                📘 Facebook
+            </a>
+
+            <a href="https://www.instagram.com/iamjunaed50?igsh=YzJsbHhxZThnbGhl" target="_blank">
+                📷 Instagram
+            </a>
+
+            <a href="mailto:mdjunaedeidtor50@gmail.com">
+                📧 Email
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+<footer>
+
+<p>Made with ❤️ by J⁷⁴</p>
+
+</footer>
+
+<button id="topBtn">⬆</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
